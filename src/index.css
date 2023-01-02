@@ -1,0 +1,200 @@
+main img {
+  border-radius: 20px;
+}
+
+.block-title {
+  margin: 120px 0 80px;
+  font-family: "Delius Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.l-city-grid__container {
+  width: 1170px;
+  height: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 370px);
+  gap: 30px;
+}
+
+.city-grid__first {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.city-grid__second {
+  grid-area: 1 / 2 / 2 / 4;
+  grid-column: span 2;
+}
+
+.city-grid__third {
+  grid-area: 2 / 1 / 3 / 3;
+  grid-column: span 2;
+}
+
+.city-grid__fourth {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.city-grid__fifth {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.city-grid__sixth {
+  grid-area: 3 / 2 / 4 / 3;
+  grid-column: span 2;
+}
+
+.c-photo-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.c-photo-date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #e0e0e0;
+}
+
+section > * > * > img {
+  position: relative;
+  top: -100%;
+  z-index: -1;
+}
+
+.l-grid-cell__on-hover {
+  position: relative;
+  top: -200%;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-grid-cell__on-hover > img {
+  border-radius: 8px;
+}
+
+.blur:hover ~ .l-grid-cell__on-hover,
+.l-grid-cell__on-hover:hover {
+  visibility: visible;
+}
+
+.l-still-life-grid__container {
+  width: 1170px;
+  height: 1570px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 370px 770px 370px;
+  gap: 30px;
+}
+
+.still-life-grid__first {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.still-life-grid__second {
+  grid-area: 1 / 2 / 2 / 4;
+  grid-column: span 2;
+}
+
+.still-life-grid__third {
+  grid-area: 2 / 1 / 3 / 3;
+  grid-column: span 2;
+}
+
+.still-life-grid__fourth {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.still-life-grid__fifth {
+  grid-area: 3 / 1 / 4 / 3;
+  grid-column: span 2;
+}
+
+.still-life-grid__sixth {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.l-fashion__container {
+  width: 1170px;
+  height: 1970px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 370px);
+  gap: 30px;
+}
+
+.fashion__first {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.fashion__second {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.fashion__third {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.fashion__fourth {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.fashion__fifth {
+  grid-area: 3 / 1 / 5 / 2;
+}
+
+.fashion__sixth {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.fashion__seventh {
+  grid-area: 2 / 3 / 4 / 4;
+}
+
+.fashion__eighth {
+  grid-area: 4 / 2 / 5 / 4;
+}
+
+.fashion__ninth {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.fashion__tenth {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+.l-photo-title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  color: white;
+  top: -127%;
+  z-index: 3;
+}
+
+.still-life-grid__third > .l-photo-title,
+.still-life-grid__fourth > .l-photo-title,
+.fashion__third > .l-photo-title,
+.fashion__seventh > .l-photo-title,
+.fashion__fifth > .l-photo-title {
+  top: -113%;
+}
